@@ -1,0 +1,41 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:tns="http://model.ws.bas.pbt.com/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <tns:SaveCommissionSchedulePlanRequest xmlns:tns="http://model.ws.bas.pbt.com/">
+            <tns:name>Test plan # 1</tns:name>
+            <tns:commission_schedule>
+                <tns:start_day>0</tns:start_day>
+                <tns:stop_day>30</tns:stop_day>
+                <tns:commission_plan>
+                    <tns:name>Simple cms plan 1</tns:name>
+                    <tns:type>wildfowl</tns:type>
+                    <tns:multiBetCommissions>
+                        <tns:multi_bet>1</tns:multi_bet>
+                        <tns:commission>1.50</tns:commission>
+                    </tns:multiBetCommissions>
+                    <tns:multiBetCommissions>
+                        <tns:multi_bet>2</tns:multi_bet>
+                        <tns:commission>2.00</tns:commission>
+                    </tns:multiBetCommissions>
+                </tns:commission_plan>
+            </tns:commission_schedule>
+            <tns:commission_schedule>
+                <tns:start_day>31</tns:start_day>
+                <tns:stop_day>60</tns:stop_day>
+                <tns:commission_plan>
+                    <tns:name>Simple cms plan 2</tns:name>
+                    <tns:type>wildfowl</tns:type>
+                    <tns:multiBetCommissions>
+                        <tns:multi_bet>1</tns:multi_bet>
+                        <tns:commission>1.50</tns:commission>
+                    </tns:multiBetCommissions>
+                    <tns:multiBetCommissions>
+                        <tns:multi_bet>2</tns:multi_bet>
+                        <tns:commission>2.00</tns:commission>
+                    </tns:multiBetCommissions>
+                </tns:commission_plan>
+            </tns:commission_schedule>
+        </tns:SaveCommissionSchedulePlanRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

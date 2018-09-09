@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://model.ws.clientsvc.raccoonberus.com/"
+           elementFormDefault="qualified">
+
+    <xs:element name="CreateClientSimpleRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="lastName" type="xs:string"/>
+                <xs:element name="firstName" type="xs:string"/>
+                <xs:element name="middleName" type="xs:string"/>
+                <xs:element name="birthDate" type="xs:date"/>
+                <xs:element name="mobilePhone" type="xs:string"/>
+                <xs:element name="email" type="xs:string"/>
+                <xs:element name="address" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="CreateClientSimpleResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+
+</xs:schema>

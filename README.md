@@ -10,7 +10,7 @@ SOAP-based web service
 
 ### How to
 
-* see actual wsdl of this service - [here](http://localhost:8051/ws/account-server.wsdl)
+* see actual wsdl of this service - [here](http://localhost:8051/ws/client-service.wsdl)
 * configure custom config on your machine:
 
     ```bash

@@ -1,6 +1,7 @@
 package com.raccoonberus.clientService.ws.endpoint;
 
 import org.junit.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.xml.transform.StringSource;
 
 import javax.xml.transform.Source;
@@ -10,9 +11,8 @@ import static org.springframework.ws.test.server.RequestCreators.withPayload;
 import static org.springframework.ws.test.server.ResponseMatchers.*;
 
 public class ClientEndpointTest extends BaseWSTester {
-
     @Test
-    public void saveCommissionSchedulePlan() throws IOException {
+    public void createClientSimple() throws IOException {
         Source requestPayload = new StringSource(
                 "<tns:CreateClientSimpleRequest xmlns:tns=\"http://model.ws.clientsvc.raccoonberus.com/\">\n" +
                         "    <tns:lastName>Smith</tns:lastName>\n" +

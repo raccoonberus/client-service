@@ -24,7 +24,9 @@ public class ClientEndpoint {
 
     @PayloadRoot(namespace = WS_NAMESPACE_URL, localPart = "CreateClientSimpleRequest")
     @ResponsePayload
-    public CreateClientSimpleResponse saveCommissionSchedulePlan(@RequestPayload CreateClientSimpleRequest req) {
-        return null; // TODO: implement me!!
+    public CreateClientSimpleResponse createClientSimple(@RequestPayload CreateClientSimpleRequest req) {
+        CreateClientSimpleResponse response = new CreateClientSimpleResponse();
+        response.setId(0);
+        return response; // TODO: implement me!!
     }
 }
